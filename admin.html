@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অ্যাডমিন ড্যাশবোর্ড - হাসান আর্নিং প্ল্যাটফর্ম</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            background: #fff;
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 { color: #333; }
+        .earnings-box {
+            font-size: 24px;
+            color: #2ed573;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 15px;
+            background: #e8f5e9;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>অ্যাডমিন প্যানেল 📊</h2>
+        <p>আপনার (অ্যাডমিন) মোট ইনকাম বা লাভ:</p>
+        <div class="earnings-box">
+            ৳ <span id="admin-earnings">0.00</span>
+        </div>
+        <button onclick="goBack()">ইউজার পেজে ফিরুন</button>
+    </div>
+
+    <script>
+        // লোকাল স্টোরেজ থেকে এডমিনের ইনকাম লোড করা
+        let adminEarnings = parseFloat(localStorage.getItem('admin_earnings')) || 0.00;
+        document.getElementById('admin-earnings').innerText = adminEarnings.toFixed(2);
+
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
