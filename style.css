@@ -1,0 +1,83 @@
+/* পুরো পেজের ডিজাইন */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* মেইন বক্স */
+.app-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* ব্যালেন্স কার্ড */
+.balance-card {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+.balance-card p { margin: 0; font-size: 16px; opacity: 0.9; }
+.balance-card h1 { margin: 5px 0 0 0; font-size: 32px; }
+
+/* আপনার সেই চারকোনা বাটন */
+.click-btn {
+    background-color: #ff4757;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(255, 71, 87, 0.3);
+    transition: 0.2s;
+}
+.click-btn:active { transform: scale(0.98); }
+
+/* টাইমার টেক্সট */
+.timer-style {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* উইথড্র সেকশন */
+.withdraw-section {
+    margin-top: 30px;
+    border-top: 2px dashed #ddd;
+    padding-top: 20px;
+}
+.withdraw-section input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.withdraw-btn {
+    background-color: #2ed573;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}

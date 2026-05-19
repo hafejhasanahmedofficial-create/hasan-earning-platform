@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সহজ ইনকাম - ক্লিক অ্যান্ড আর্ন</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h2>হাসান ভাইয়ের আর্নিং সাইট 💰</h2>
+        
+        <div class="balance-card">
+            <p>আপনার ব্যালেন্স</p>
+            <h1><span id="user-balance">0.00</span> টাকা</h1>
+        </div>
+
+        <div class="task-section">
+            <button id="ad-button" class="click-btn">ভিডিও বিজ্ঞাপন দেখুন</button>
+            <p id="timer-text" class="timer-style" style="display: none;">বিরতি: <span id="countdown">120</span> সেকেন্ড বাকি</p>
+        </div>
+
+        <div class="withdraw-section">
+            <h3>টাকা তুলুন (সর্বনিম্ন ১০০ টাকা)</h3>
+            <input type="number" id="withdraw-amount" placeholder="টাকার পরিমাণ লিখুন">
+            <input type="text" id="bkash-number" placeholder="বিকাश বা নগদ নম্বর">
+            <button id="withdraw-btn" class="withdraw-btn">উইথড্র রিকোয়েস্ট</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
